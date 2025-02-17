@@ -50,24 +50,25 @@ def main():
 
     # squaresInSquares(myTurtle, 5) #draws 5 concentric squares
 
-    
-    def drawSquare(size):
-        for i in range (4):
-            turtle.forward(100)
-            turtle.right(90)
-            
-    def drawSquaresInSquares(numSquares, spacing):
-        for i in range(numSquares):
-            drawSquare(start_side - i * spacing)
-            turtle.penup()
-            turtle.backward(spacing / 2)
-            turtle.right(90)
-            turtle.forward(spacing / 2)
-            turtle.left(90)
-            turtle.pendown()
-            
-    numSquares=5 
-    spacing=40
+def squaresInSquares(brock, size):
+    drawSquare(brock, 200)
+    brock.up()
+    brock.goto(5, -5)
+    brock.down()
+    drawSquare(brock, 190)
+    brock.up()
+    brock.goto(-10, 10)
+    brock.down()
+    drawSquare(brock, 180)
+    brock.up()
+    brock.goto(-15, 15)
+    brock.down()
+    drawSquare(brock, 170)
+    brock.up()
+    brock.goto(-20, 20)
+    brock.down()
+    drawSquare(brock, 160)
+        
     
 
     # squaresInSquares(myTurtle, 3) #draws 3 concentric squares
